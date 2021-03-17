@@ -1,11 +1,6 @@
 
+echo "" && echo ". ~/src/kubernetes-spinnaker-setup/02b-target-aks-cluster.sh"
 . ~/src/kubernetes-spinnaker-setup/02b-target-aks-cluster.sh
 
-# cd ~/src/kubernetes-spinnaker-setup/Ex_Files_Kubernetes_Spinnaker/Exercise\ Files/01-01/
-# cd ~/src/kubernetes-spinnaker-setup/
-# cd Ex_Files_Kubernetes_Spinnaker/
-# ll
-# echo "\$KUBECONFIG= "  $KUBECONFIG
-
-
+echo "" && echo "az group delete --name aksresgrp --no-wait --yes"
 az group delete --name aksresgrp --no-wait --yes
